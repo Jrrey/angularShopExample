@@ -8,7 +8,7 @@
 
 		<ul>
 			<li ng-repeat="article in articles | filter: articleFilter">
-				{{ article.name }} <a href="" ng-click="addToCart(article)">Add to Cart</a>
+				{{ article.name }}, {{ article.price }} <a href="" ng-click="addToCart(article)">Add to Cart</a>
 			</li>
 		</ul>
 	</div>

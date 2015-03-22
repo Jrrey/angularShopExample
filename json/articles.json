@@ -1,14 +1,17 @@
 [
 	{
 		"name": "Article 1",
-		"id": 1
+		"id": 1,
+		"price": "12.50"
 	},
 	{
 		"name": "Article 2",
-		"id": 2
+		"id": 2,
+		"price": "11.22"
 	},
 	{
 		"name": "Article 3",
-		"id": 3
+		"id": 3,
+		"price": "7.00"
 	}
 ]

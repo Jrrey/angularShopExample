@@ -27,11 +27,16 @@ shopFactory.factory('CartFactory', function(){
 		list: function (callback) {
 			callback(items);
 		},
-		addArticle: function (article) {
-			items.push({
-				article: article,
-				id: ++id
-			});
+		addArticle: function (article ) {
+			if(items.indexOf(article) != -1) {
+				if(isNaN(article.amount)) {
+					article.amount = 2
+				}else{
+					article.amount++;
+				}
+			}else {
+				items.push(article);
+			}
 		}
 	}
 });
