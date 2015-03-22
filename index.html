@@ -12,6 +12,7 @@
 
 	<!-- Bootstrap core CSS -->
 	<link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.less" rel="stylesheet">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -22,22 +23,19 @@
 
 <body ng-app="shopApp">
 
-<div class="container">
-	<div class="header clearfix">
-		<!--<nav>
-			<ul class="nav nav-pills pull-right">
-				<li role="presentation" class="active"><a href="#">Home</a></li>
-				<li role="presentation"><a href="#">About</a></li>
-				<li role="presentation"><a href="#">Contact</a></li>
-			</ul>
-		</nav>-->
-		<h3 class="text-muted">My Angular Shop</h3>
+<div class="navbar-inverse">
+	<div class="container">
+		<div class="header clearfix">
+			<h3>My Angular Shop</h3>
+		</div>
 	</div>
+</div>
 
+<div class="container maincontainer">
 	<ng-view></ng-view>
 
 	<footer class="footer">
-		<p>&copy; Company 2014</p>
+		<p>&copy; Mike Logan</p>
 	</footer>
 
 </div> <!-- /container -->
