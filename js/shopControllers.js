@@ -17,4 +17,8 @@ shopControllers.controller('CartCtrl', function ($scope, CartFactory){
 	CartFactory.list(function(data) {
 		$scope.cartItems = data;
 	});
+
+	$scope.remove = function(cartItem) {
+		CartFactory.remove(cartItem);
+	}
 });

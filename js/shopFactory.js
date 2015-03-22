@@ -37,6 +37,15 @@ shopFactory.factory('CartFactory', function(){
 			}else {
 				items.push(article);
 			}
+		},
+		remove: function(article) {
+			if(items.indexOf(article) != -1) {
+				if(article.amount > 1) {
+					article.amount--;
+				}else{
+					items.splice(items.indexOf(article), 1);
+				}
+			}
 		}
 	}
 });

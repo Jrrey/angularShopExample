@@ -15,7 +15,10 @@
 	<div class="col-md-4" ng-controller="CartCtrl">
 		<h2>Cart</h2>
 		<ul>
-			<li ng-repeat="cartItem in cartItems">{{ cartItem }}</li>
+			<li ng-repeat="cartItem in cartItems">
+				{{ cartItem }}
+				<a href="" ng-click="remove(cartItem)">remove</a>
+			</li>
 		</ul>
 	</div>
 </div>

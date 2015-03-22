@@ -13,5 +13,40 @@
 		"name": "Article 3",
 		"id": 3,
 		"price": "7.00"
+	},
+	{
+		"name": "Article 4",
+		"id": 3,
+		"price": "7.11"
+	},
+	{
+		"name": "Article 5",
+		"id": 3,
+		"price": "7.22"
+	},
+	{
+		"name": "Article 6",
+		"id": 3,
+		"price": "7.33"
+	},
+	{
+		"name": "Article 7",
+		"id": 3,
+		"price": "7.44"
+	},
+	{
+		"name": "Article 8",
+		"id": 3,
+		"price": "7.55"
+	},
+	{
+		"name": "Article 9",
+		"id": 3,
+		"price": "7.66"
+	},
+	{
+		"name": "Article 10",
+		"id": 3,
+		"price": "7.77"
 	}
 ]
