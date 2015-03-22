@@ -29,12 +29,9 @@ shopFactory.factory('CartFactory', function(){
 		},
 		addArticle: function (article ) {
 			if(items.indexOf(article) != -1) {
-				if(isNaN(article.amount)) {
-					article.amount = 2
-				}else{
-					article.amount++;
-				}
+				article.amount++;
 			}else {
+				article.amount = 1;
 				items.push(article);
 			}
 		},
@@ -46,6 +43,23 @@ shopFactory.factory('CartFactory', function(){
 					items.splice(items.indexOf(article), 1);
 				}
 			}
+		}
+	}
+});
+
+shopFactory.factory('BuyerFactory', function() {
+	var buyerDetails = {
+		name: 'test name',
+		firstname: 'test firstname',
+		street: 'test street',
+		zipcode: 'test zipcode',
+		city: 'test city',
+		email: 'test email'
+	};
+
+	return {
+		getBuyer: function (callback) {
+			callback(buyerDetails);
 		}
 	}
 });

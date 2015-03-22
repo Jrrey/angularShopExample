@@ -22,3 +22,12 @@ shopControllers.controller('CartCtrl', function ($scope, CartFactory){
 		CartFactory.remove(cartItem);
 	}
 });
+
+shopControllers.controller('BuyCtrl', function($scope, BuyerFactory) {
+
+	console.log('test');
+	BuyerFactory.getBuyer(function(data) {
+		console.log(data);
+		$scope.buyer = data;
+	});
+});

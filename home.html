@@ -11,12 +11,13 @@
 				{{ article.name }}, {{ article.price }} <a href="" ng-click="addToCart(article)">Add to Cart</a>
 			</li>
 		</ul>
+		<a href="#/confirm"><span class="btn btn-success">Proceed</span></a>
 	</div>
 	<div class="col-md-4" ng-controller="CartCtrl">
 		<h2>Cart</h2>
 		<ul>
 			<li ng-repeat="cartItem in cartItems">
-				{{ cartItem }}
+				<cartitem item="cartItem" />
 				<a href="" ng-click="remove(cartItem)">remove</a>
 			</li>
 		</ul>
