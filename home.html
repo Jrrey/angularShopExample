@@ -1,0 +1,21 @@
+<div class="row">
+	<div class="col-md-8">
+		<h2>Available Items</h2>
+
+		<p>
+			Filter: <input type="text" ng-model="articleFilter" class="form-control" />
+		</p>
+
+		<ul>
+			<li ng-repeat="article in articles | filter: articleFilter">
+				{{ article.name }} <a href="" ng-click="addToCart(article)">Add to Cart</a>
+			</li>
+		</ul>
+	</div>
+	<div class="col-md-4" ng-controller="CartCtrl">
+		<h2>Cart</h2>
+		<ul>
+			<li ng-repeat="cartItem in cartItems">{{ cartItem }}</li>
+		</ul>
+	</div>
+</div>
