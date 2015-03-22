@@ -22,7 +22,6 @@ shopFactory.factory('ShopArticlesFactory', function($http){
 
 shopFactory.factory('CartFactory', function(){
 	var items = [];
-	var id = 0;
 	return {
 		list: function (callback) {
 			callback(items);

@@ -8,19 +8,19 @@ var shopApp = angular.module('shopApp', [
 shopApp.config(function($routeProvider) {
 	$routeProvider.
 		when('/', {
-			templateUrl: 'home.html',
+			templateUrl: 'views/home.html',
 			controller: 'ShopListCtrl'
 		})
 		.when('/confirm', {
-			templateUrl: 'confirm.html',
+			templateUrl: 'views/confirm.html',
 			controller: 'CartCtrl'
 		})
 		.when('/buy', {
-			templateUrl: 'buy.html',
+			templateUrl: 'views/buy.html',
 			controller: 'BuyCtrl'
 		})
 		.when('/overview', {
-			templateUrl: 'overview.html',
+			templateUrl: 'views/overview.html',
 			controller: 'BuyCtrl'
 		})
 		.otherwise({

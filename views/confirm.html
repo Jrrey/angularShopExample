@@ -1,0 +1,13 @@
+<div class="row">
+	<div class="col-md-8">
+		<h2>Chosen Items</h2>
+		<ul>
+			<li ng-repeat="article in cartItems">
+				<input type="text" ng-model="article.amount" />
+				<cartitem item="article" />
+			</li>
+		</ul>
+		<a href="#/"><span class="btn btn-default">go back</span></a>
+		<a href="#/buy"><span class="btn btn-success">proceed</span></a>
+	</div>
+</div>
